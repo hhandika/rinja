@@ -1,6 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:rinja/providers/settings.dart';
 import 'package:rinja/screens/home/home.dart';
 import 'package:rinja/screens/more/components/settings.dart';
+import 'package:rinja/src/rust/api/simple.dart';
 import 'package:rinja/src/rust/frb_generated.dart';
 import 'package:rinja/styles/theme.dart';
 import 'package:dynamic_color/dynamic_color.dart';
@@ -13,6 +15,10 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final prefs = await SharedPreferences.getInstance();
   await RustLib.init();
+
+  if (kDebugMode) {
+    print(greet(name: 'Rinja'));
+  }
 
   runApp(ProviderScope(
       overrides: [settingProvider.overrideWithValue(prefs)],

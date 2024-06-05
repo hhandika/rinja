@@ -465,7 +465,6 @@ name = "rust_lib_rinja"
 version = "0.1.0"
 dependencies = [
  "flutter_rust_bridge",
- "rinja_api",
 ]
 
 [[package]]
