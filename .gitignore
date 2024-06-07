@@ -27,3 +27,7 @@ doc/api/
 .flutter-plugins-dependencies
 
 /target/
+
+.DS_Store
+*/.DS_Store
+*/.vscode/
