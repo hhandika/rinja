@@ -1,33 +1,33 @@
 const dummyPackList = [
-  GuidePacks(
+  BookChapter(
     uuid: '1',
-    name: 'Mammals of Sumatra',
-    description: 'A field guide to the mammals of Sumatra',
+    name: 'Rats and Mice of Sulawesi',
+    description: '48 species',
   ),
-  GuidePacks(
+  BookChapter(
+    uuid: '4',
+    name: 'Shrews of Sulawesi',
+    description: '21 species',
+  ),
+  BookChapter(
     uuid: '2',
     name: 'Mammals of Borneo',
     description: 'A field guide to the mammals of Borneo',
   ),
-  GuidePacks(
+  BookChapter(
     uuid: '3',
     name: 'Mammals of Java',
     description: 'A field guide to the mammals of Java',
   ),
-  GuidePacks(
-    uuid: '4',
-    name: 'Mammals of Sulawesi',
-    description: 'A field guide to the mammals of Sulawesi',
-  ),
-  GuidePacks(
+  BookChapter(
     uuid: '5',
     name: 'Mammals of Papua',
     description: 'A field guide to the mammals of Papua',
   )
 ];
 
-class GuidePacks {
-  const GuidePacks({
+class BookChapter {
+  const BookChapter({
     required this.uuid,
     required this.name,
     required this.description,

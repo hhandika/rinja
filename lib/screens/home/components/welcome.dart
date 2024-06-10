@@ -1,4 +1,4 @@
-import 'package:rinja/services/packs.dart';
+import 'package:rinja/services/chapters.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeContainer extends StatelessWidget {
@@ -51,7 +51,7 @@ class WelcomeContainer extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Packs',
+                      'Chapters',
                       style: Theme.of(context).textTheme.titleMedium,
                     ),
                     Text(
@@ -71,7 +71,7 @@ class WelcomeContainer extends StatelessWidget {
                       style: Theme.of(context).textTheme.titleMedium,
                     ),
                     Text(
-                      '592',
+                      '63',
                       style: Theme.of(context).textTheme.titleMedium,
                     ),
                   ],

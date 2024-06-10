@@ -1,8 +1,8 @@
-import 'package:rinja/screens/home/components/packs.dart';
+import 'package:rinja/screens/home/components/chapters.dart';
 import 'package:rinja/screens/home/components/welcome.dart';
 import 'package:rinja/screens/shared/components.dart';
 import 'package:rinja/screens/shared/navigation.dart';
-import 'package:rinja/services/packs.dart';
+import 'package:rinja/services/chapters.dart';
 import 'package:rinja/services/system.dart';
 import 'package:flutter/material.dart';
 
@@ -99,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'My Packs',
+                  'My chapters',
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
                 TextButton(
@@ -112,8 +112,8 @@ class _HomeScreenState extends State<HomeScreen> {
           const Packs(
             packs: dummyPackList,
           ),
-          MainSharedTiles(
-            title: 'Explore Packs',
+          SharedTiles(
+            title: 'Explore chapters',
             icon: Icons.search_outlined,
             onTap: () {},
           ),
@@ -142,7 +142,7 @@ class _HomeScreenState extends State<HomeScreen> {
 class Packs extends StatelessWidget {
   const Packs({super.key, required this.packs});
 
-  final List<GuidePacks> packs;
+  final List<BookChapter> packs;
 
   @override
   Widget build(BuildContext context) {
@@ -155,7 +155,8 @@ class Packs extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             itemCount: packs.length,
             itemBuilder: (context, index) {
-              return PackContainer(isSelected: index == 0, pack: packs[index]);
+              return ChapterContainer(
+                  isSelected: index == 0, pack: packs[index]);
             },
           ),
         ));

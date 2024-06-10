@@ -1,14 +1,14 @@
-import 'package:rinja/services/packs.dart';
+import 'package:rinja/services/chapters.dart';
 import 'package:flutter/material.dart';
 
-class PackContainer extends StatelessWidget {
-  const PackContainer({
+class ChapterContainer extends StatelessWidget {
+  const ChapterContainer({
     super.key,
     required this.pack,
     required this.isSelected,
   });
 
-  final GuidePacks pack;
+  final BookChapter pack;
   final bool isSelected;
 
   @override
