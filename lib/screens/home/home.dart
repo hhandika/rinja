@@ -2,9 +2,26 @@ import 'package:rinja/screens/home/components/chapters.dart';
 import 'package:rinja/screens/home/components/welcome.dart';
 import 'package:rinja/screens/shared/components.dart';
 import 'package:rinja/screens/shared/navigation.dart';
+import 'package:rinja/screens/explore/explore.dart';
+import 'package:rinja/screens/favorites/favorites.dart';
+import 'package:rinja/screens/more/more_options.dart';
 import 'package:rinja/services/chapters.dart';
 import 'package:rinja/services/system.dart';
 import 'package:flutter/material.dart';
+
+const List<Widget> pages = <Widget>[
+  HomeScreen(),
+  ExploreScreen(),
+  FavoriteScreen(),
+  MoreScreen(),
+];
+
+const List<String> pageTitles = <String>[
+  'RINJA Species ID',
+  'Explore',
+  'Favorites',
+  'More Options',
+];
 
 class RinjaHome extends StatefulWidget {
   const RinjaHome({super.key});

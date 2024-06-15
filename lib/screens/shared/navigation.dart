@@ -1,23 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rinja/screens/explore/explore.dart';
-import 'package:rinja/screens/favorites/favorites.dart';
-import 'package:rinja/screens/home/home.dart';
-import 'package:rinja/screens/more/more_options.dart';
 import 'package:rinja/services/system.dart';
-
-const List<Widget> pages = <Widget>[
-  HomeScreen(),
-  ExploreScreen(),
-  FavoriteScreen(),
-  MoreScreen(),
-];
-
-const List<String> pageTitles = <String>[
-  'RINJA Species ID',
-  'Explore',
-  'Favorites',
-  'More Options',
-];
 
 class NavigationProperties {
   const NavigationProperties({
